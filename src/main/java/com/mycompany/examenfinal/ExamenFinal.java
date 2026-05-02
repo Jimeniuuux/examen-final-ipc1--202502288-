@@ -9,15 +9,19 @@ package com.mycompany.examenfinal;
  * @author pichi
  */
 public class ExamenFinal {
-
     public static void main(String[] args) {
 
-        Cancion c1 = new Cancion("La mentira", 200, " Luis Miguel");
-        Cancion c2 = new Cancion("La canción", 180, " Bad Bunny");
-        Cancion c3 = new Cancion("Algo contigo", 210, " Los panchos");
+        Playlist lista = new Playlist();
 
-        c1.reproducir();
-        c2.reproducir();
-        c3.reproducir();
+        Cancion c1 = new Cancion("La mentira", 180, "Luis Miguel");
+        Cancion c2 = new Cancion("La canción", 210, "Bad Bunny");
+        Cancion c3 = new Cancion("Algo contigo", 200, "Los Panchos");
+
+        lista.agregarCancion(c1);
+        lista.agregarCancion(c2);
+        lista.agregarCancion(c3);
+
+        lista.mostrarPlaylist();
     }
 }
+
